@@ -1,8 +1,8 @@
 ---
-title: "20-03-19 목요일"
+layout: post
+title:  "3월 19일 목요일"
 categories: lol
 ---
-
 **오늘 한 것**
 
 
@@ -16,8 +16,3 @@ categories: lol
 
 - 앱프로그래밍실무 개발 계획서를 제출이 제일 급함
   - 게시판을 세세하게 개발
-
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "첫번째 깃허브 블로그 글"
 categories: lol
 ---

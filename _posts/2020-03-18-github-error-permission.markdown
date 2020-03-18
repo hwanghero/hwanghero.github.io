@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "github open permission denied git 에러 뜰경우"
 categories: github
 ---

@@ -282,10 +282,10 @@ defaults:
       related: true
       
 texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
+  title: Notepad
+  tagline: Run
   date_format: "%b %-d, %Y"
-  style: black
+  style: blue
   showNav: false
   showPicker: true
 

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "git push ([GIT err]! [rejected] master -> master (fetch first)"
 categories: github
 ---

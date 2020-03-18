@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "github clone 후 install"
 categories: github
 ---

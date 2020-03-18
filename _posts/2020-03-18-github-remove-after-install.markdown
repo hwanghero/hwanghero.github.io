@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "github git삭제 후 다시 git 생성"
 categories: github
 ---
