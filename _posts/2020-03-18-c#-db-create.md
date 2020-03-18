@@ -3,12 +3,7 @@ title: "C# 데이터베이스 간단하게 연결 및 조회"
 categories: c#
 ---
 
-using MySql.Data.MySqlClient;
 
-namespace project
-{
-    class database
-    {
         // 쿼리 접속
         MySqlConnection connection = new MySqlConnection("Server=localhost;Database=insa;Uid=root;Pwd=root;");
         // 쿼리 연결
@@ -45,8 +40,6 @@ namespace project
             }
             return check;
         }
-    }
-}
 
 
 쿼리접속부분에서 아이디, 비밀번호, DB입력을 해주면됨
