@@ -4,7 +4,7 @@ title: "C# 데이터베이스 간단하게 연결 및 조회"
 categories: c#
 ---
 
-
+```
         // 쿼리 접속
         MySqlConnection connection = new MySqlConnection("Server=localhost;Database=insa;Uid=root;Pwd=root;");
         // 쿼리 연결
@@ -41,7 +41,7 @@ categories: c#
             }
             return check;
         }
-
+```
 
 쿼리접속부분에서 아이디, 비밀번호, DB입력을 해주면됨
 접속 후에 SELECT문을 이용하여 데이터값이 있는지 체크
