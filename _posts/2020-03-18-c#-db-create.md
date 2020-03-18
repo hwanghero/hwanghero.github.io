@@ -4,6 +4,7 @@ categories: c#
 ---
 
 using MySql.Data.MySqlClient;
+
 namespace project
 {
     class database
@@ -15,6 +16,7 @@ namespace project
         {
             connection.Open();
         }
+        
         public int logincheck(String id, String pw)
         {
             int check = 0;
