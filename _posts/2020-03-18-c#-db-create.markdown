@@ -4,7 +4,7 @@ title: "C# 데이터베이스 간단하게 연결 및 조회"
 categories: c#
 ---
 
-```
+```c#
         // 쿼리 접속
         MySqlConnection connection = new MySqlConnection("Server=localhost;Database=insa;Uid=root;Pwd=root;");
         // 쿼리 연결
