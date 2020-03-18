@@ -1,6 +1,6 @@
 ---
-title: "C# 윈폼안에 윈폼 (WPF Page 느낌)"
-categories: c#
+title: "git push ([GIT err]! [rejected] master -> master (fetch first)"
+categories: github
 ---
 
 https://m.blog.naver.com/PostView.nhn?blogId=chandong83&logNo=220745427790&proxyReferer=https%3A%2F%2Fwww.google.com%2F
@@ -23,6 +23,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 아래처럼 명령으로 업로드하면 강제로 진행을 할 수 있게 된다.
 단, 기존 데이터는 보장 못한다.
 git push origin +master
+
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
