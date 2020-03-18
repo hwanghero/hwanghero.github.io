@@ -283,15 +283,15 @@ defaults:
       
 texture:
   title: Notepad
-  tagline: Run
+  tagline: 
   date_format: "%b %-d, %Y"
   style: blue
   showNav: false
-  showPicker: true
+  showPicker: false
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+    twitter: 
+    github:  hwanghero
+    linkedIn: 
     rss: rss
