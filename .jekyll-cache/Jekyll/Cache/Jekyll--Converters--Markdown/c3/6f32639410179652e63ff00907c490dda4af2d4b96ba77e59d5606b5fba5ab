@@ -1,0 +1,38 @@
+I"�<div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="c1">// 쿼리 접속</span>
+        <span class="n">MySqlConnection</span> <span class="n">connection</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">MySqlConnection</span><span class="p">(</span><span class="s">"Server=localhost;Database=insa;Uid=root;Pwd=root;"</span><span class="p">);</span>
+        <span class="c1">// 쿼리 연결</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">connectionDB</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">connection</span><span class="p">.</span><span class="nf">Open</span><span class="p">();</span>
+        <span class="p">}</span>
+        
+        <span class="k">public</span> <span class="kt">int</span> <span class="nf">logincheck</span><span class="p">(</span><span class="n">String</span> <span class="n">id</span><span class="p">,</span> <span class="n">String</span> <span class="n">pw</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">check</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">id</span><span class="p">.</span><span class="nf">Equals</span><span class="p">(</span><span class="s">""</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">pw</span><span class="p">.</span><span class="nf">Equals</span><span class="p">(</span><span class="s">""</span><span class="p">))</span>
+            <span class="p">{</span>
+                <span class="n">check</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">try</span> <span class="c1">//예외 처리</span>
+            <span class="p">{</span>
+                <span class="kt">string</span> <span class="n">sql</span> <span class="p">=</span> <span class="s">"SELECT * FROM user where id='"</span><span class="p">+</span><span class="n">id</span><span class="p">+</span><span class="s">"' and pw='"</span><span class="p">+</span><span class="n">pw</span><span class="p">+</span><span class="s">"'"</span><span class="p">;</span>
+                <span class="c1">//ExecuteReader를 이용하여</span>
+                <span class="c1">//연결 모드로 데이타 가져오기</span>
+                <span class="n">MySqlCommand</span> <span class="n">cmd</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">MySqlCommand</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">connection</span><span class="p">);</span>
+                <span class="n">MySqlDataReader</span> <span class="n">table</span> <span class="p">=</span> <span class="n">cmd</span><span class="p">.</span><span class="nf">ExecuteReader</span><span class="p">();</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">table</span><span class="p">.</span><span class="nf">Read</span><span class="p">())</span>
+                <span class="p">{</span>
+                    <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"login success"</span><span class="p">);</span>
+                    <span class="n">check</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="n">table</span><span class="p">.</span><span class="nf">Close</span><span class="p">();</span>
+            <span class="p">}</span>
+            <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"실패"</span><span class="p">);</span>
+                <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">ex</span><span class="p">.</span><span class="nf">ToString</span><span class="p">());</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="n">check</span><span class="p">;</span>
+        <span class="p">}</span>
+</code></pre></div></div>
+:ET

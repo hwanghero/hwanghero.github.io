@@ -1,0 +1,13 @@
+I"2<p>git init - 초기 설치
+git clone https://github.com/hwanghero/Linux.git</p>
+
+<p>git add . - git에 추가 (필수)
+git status</p>
+
+<p>git config –global user.email “이메일’
+git config –global user.name “이름”</p>
+
+<p>git commit -m “test” (커밋 추가)
+git push (올리기)</p>
+
+:ET
