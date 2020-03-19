@@ -3,6 +3,22 @@
 <head>
 	{%- include head.html -%}
 </head>
+<style>
+	div.left {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        
+        background: #ff0;
+    }
+    div.right {
+        width: 50%;
+        float: right;
+        box-sizing: border-box;
+        
+        background: #0ff;
+    }
+</style>
 <body>
 	<header class="texture-{{ site.texture.style }}">
 		<div class="container">
@@ -11,9 +27,12 @@
 		{%- include page_header.html -%}	
 	</header>
 	<main>
-		<img src='http://drive.google.com/uc?export=view&id=1-x3kAmUU922yNCBzMklYN_d-50AaxqHI' /><br>
-		<div class="container">
+		
+		<div class="left">
 			{{ content }}
+		</div>
+		<div class="right">
+			<img src='http://drive.google.com/uc?export=view&id=1-x3kAmUU922yNCBzMklYN_d-50AaxqHI' /><br>
 		</div>
 	</main>
 	{%- include footer.html -%}
