@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "3월 19일 목요일"
+title:  "3월 18일 수요일"
 categories: lol
 ---
 **오늘 한 것**
