@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "코딩 예제"
+title:  "코딩 작성 예제"
 description: An example post which shows code rendering.
 date:   2019-05-23 21:03:36 +0530
 categories: Javascript NodeJS
