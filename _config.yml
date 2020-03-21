@@ -284,7 +284,7 @@ defaults:
 texture:
   title: Notepad
   tagline: 
-  date_format: "%b %-d, %Y"
+  date_format: "%m/%d/%Y"
   style: blue
   showNav: false
   showPicker: false
