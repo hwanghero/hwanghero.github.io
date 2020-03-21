@@ -1,0 +1,6 @@
+I"�<p>inline - 줄바꿈없이 다른 엘리먼트들과 나란히 배치함 ( 가로로 무조건 )</p>
+<ul>
+  <li>width, height 속성 수정이 안됨</li>
+  <li>margin과 padding 속성도 좌우 간격만 반영됨</li>
+</ul>
+:ET
