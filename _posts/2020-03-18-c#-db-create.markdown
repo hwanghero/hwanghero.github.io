@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C# 데이터베이스 간단하게 연결 및 조회"
+title: "C# statement (SELECT) 간단하게"
 categories: c#
 ---
 
