@@ -1,4 +1,4 @@
 # github blog
 https://hwanghero.github.io/
-# tistory blog
+# tistory blog (개발일지)
 https://krplayer.tistory.com/
